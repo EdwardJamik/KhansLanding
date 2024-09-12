@@ -43,12 +43,13 @@ main {
           // height: 72px;
           letter-spacing: -0.03em;
           text-align: center;
+          line-height: normal;
           // line-height: 68%;
         }
 
         & .pre_title {
           position: relative;
-          top: -24px;
+          top: -32px;
           display: flex;
           // align-items: center;
           // justify-content: center;
@@ -79,7 +80,7 @@ main {
           // }
 
           & > img {
-            margin-left: 8px;
+            margin-left: 12px;
             margin-top: 8px;
             // max-width: 164px;
             // width: 100%;
