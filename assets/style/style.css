@@ -216,7 +216,7 @@ main .top .top_content .description h1 {
 }
 main .top .top_content .description h1 div {
   position: absolute;
-  bottom: -16px;
+  bottom: -24%;
   left: 52%;
   transform: translate(-50%, 0);
   display: flex;
