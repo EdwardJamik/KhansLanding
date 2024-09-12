@@ -227,11 +227,6 @@ main .top .top_content .description .pre_title {
   padding-left: 12px;
   width: 218px;
 }
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  main .top .top_content .description .pre_title {
-    top: -44px;
-  }
-}
 main .top .top_content .description .pre_title::before {
   content: " ";
   position: absolute;

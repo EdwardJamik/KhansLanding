@@ -62,9 +62,9 @@ main {
           padding-left: 12px;
           width: 218px;
 
-          @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-            top: -44px;
-          }
+          // @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+          //   top: -44px;
+          // }
 
           &::before {
             content: " ";
