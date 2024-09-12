@@ -25,6 +25,8 @@ main {
 
       & .logo {
         margin: 0 auto;
+        width: 100%;
+        max-width: 80px;
       }
 
       & .description {
@@ -63,6 +65,8 @@ main {
             & > img {
               margin-left: 8px;
               margin-top: 8px;
+              max-width: 164px;
+              width: 100%;
             }
           }
         }
