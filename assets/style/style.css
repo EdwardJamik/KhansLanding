@@ -236,6 +236,8 @@ main .top .top_content .description h1 div > img {
   margin-top: 8px;
   max-width: 164px;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .top .top_content .description p {
   font-family: "Gilroy", sans-serif;
