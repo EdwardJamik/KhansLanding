@@ -210,8 +210,6 @@ main .top .top_content .description h1 {
   text-shadow: 1px 2px 4px rgba(45, 50, 53, 0.1019607843);
   font-size: 72px;
   font-weight: 800;
-  line-height: 32px;
-  height: 72px;
   letter-spacing: -0.03em;
   text-align: center;
 }
