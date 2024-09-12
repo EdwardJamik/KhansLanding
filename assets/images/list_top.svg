@@ -1,0 +1,13 @@
+<svg width="335" height="146" viewBox="0 0 335 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1_21" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10V136C0 141.523 4.47714 146 9.99999 146H293L335 104V10C335 4.47715 330.523 0 325 0H10Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10V136C0 141.523 4.47714 146 9.99999 146H293L335 104V10C335 4.47715 330.523 0 325 0H10Z" fill="#2D3235"/>
+<path d="M293 146V147.5H293.621L294.061 147.061L293 146ZM335 104L336.061 105.061L336.5 104.621V104H335ZM1.5 10C1.5 5.30558 5.30558 1.5 10 1.5V-1.5C3.64873 -1.5 -1.5 3.64872 -1.5 10H1.5ZM1.5 136V10H-1.5V136H1.5ZM9.99999 144.5C5.30557 144.5 1.5 140.694 1.5 136H-1.5C-1.5 142.351 3.64872 147.5 9.99999 147.5V144.5ZM293 144.5H9.99999V147.5H293V144.5ZM294.061 147.061L336.061 105.061L333.939 102.939L291.939 144.939L294.061 147.061ZM333.5 10V104H336.5V10H333.5ZM325 1.5C329.694 1.5 333.5 5.30558 333.5 10H336.5C336.5 3.64873 331.351 -1.5 325 -1.5V1.5ZM10 1.5H325V-1.5H10V1.5Z" fill="url(#paint0_linear_1_21)" mask="url(#path-1-inside-1_1_21)"/>
+<defs>
+<linearGradient id="paint0_linear_1_21" x1="167.5" y1="0" x2="167.5" y2="160" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C99D67"/>
+<stop offset="1" stop-color="#EABC8B"/>
+</linearGradient>
+</defs>
+</svg>

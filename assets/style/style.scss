@@ -1,0 +1,649 @@
+@import url("https://fonts.cdnfonts.com/css/murs-gothic");
+// @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import "nllstyled";
+
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  // overflow: hidden;
+  & .top {
+    padding: 6px;
+    height: 100vh;
+    & .top_content {
+      padding: 30px 0 0;
+      background: url(/assets/images/topBg.png);
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      & .logo {
+        margin: 0 auto;
+      }
+
+      & .description {
+        margin-top: 60px;
+
+        & h1 {
+          text-transform: uppercase;
+          font-family: "Murs Gothic", sans-serif;
+          text-shadow: 1px 2px 4px #2d32351a;
+          font-size: 72px;
+          font-weight: 800;
+          line-height: 32px;
+          letter-spacing: -0.03em;
+          text-align: center;
+
+          & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 14px;
+            & > span {
+              font-size: 42px;
+              font-weight: 400;
+              // line-height: 46.2px;
+              letter-spacing: -0.04em;
+              text-align: center;
+              text-transform: lowercase;
+
+              font-family: "birchctt", sans-serif;
+            }
+
+            & > img {
+              margin-left: 8px;
+            }
+          }
+        }
+
+        & p {
+          font-family: "Gilroy", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: center;
+
+          max-width: 220px;
+          margin: 30px auto 0;
+        }
+      }
+
+      & .logoChatBotique {
+        position: relative;
+
+        & .logo_content {
+          margin: 30px auto;
+        }
+
+        & svg {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.aos-animate {
+          & .triangle-path {
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+            animation: draw 1.5s linear forwards;
+          }
+        }
+      }
+
+      & .action_button {
+        max-width: 94%;
+        margin: 0 auto;
+      }
+
+      & .default_button {
+        max-width: 94%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.experts {
+  background: url("./../images/expert_bg.png");
+  padding: 70px 20px 70px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  & .title {
+    & > span {
+      font-family: "birchctt", sans-serif;
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #eabc8b;
+    }
+
+    & > h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      max-width: 284px;
+      margin-top: 10px;
+    }
+  }
+
+  & .list {
+    margin-top: 40px;
+    gap: 10px;
+    display: grid;
+    & li {
+      position: relative;
+      width: 100%;
+      padding: 80px 20px 20px 20px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #c99d67 0%, #eabc8b 109.59%);
+
+      & > p {
+        font-family: "Gilroy", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        & > span {
+          color: #eabc8b;
+          font-family: "Gilroy", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+      }
+
+      &::after {
+        content: " ";
+        position: absolute;
+        background: url("./../images/second_logo_chatbotique.svg");
+        width: 24px;
+        height: 20px;
+        top: 20px;
+        left: 20px;
+      }
+
+      &:nth-child(2n + 1) {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 85% 100%, 0 100%);
+        &::before {
+          content: " ";
+          position: absolute;
+          left: 0.7px;
+          right: 34px;
+          top: 1px;
+          bottom: 1px;
+          width: 99.4%;
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 85% 100%, 0 100%);
+          background: #2d3235;
+          border-radius: 10px;
+          z-index: -1;
+        }
+      }
+
+      &:nth-child(2n) {
+        clip-path: polygon(0 0, 85% 0, 100% 35%, 100% 100%, 0 100%);
+        &::before {
+          content: " ";
+          position: absolute;
+          left: 0.7px;
+          right: 34px;
+          top: 1px;
+          bottom: 1px;
+          width: 99.4%;
+          clip-path: polygon(0 0, 85% 0, 100% 35%, 100% 100%, 0 100%);
+          background: #2d3235;
+          border-radius: 10px;
+          z-index: -1;
+        }
+      }
+
+      &:nth-child(1n) {
+        & p {
+          max-width: 244px;
+        }
+      }
+
+      &:nth-child(2n) {
+        & p {
+          max-width: 229px;
+        }
+      }
+
+      &:nth-child(3n) {
+        & p {
+          max-width: 198px;
+        }
+      }
+
+      &:nth-child(4n) {
+        & p {
+          max-width: 277px;
+        }
+      }
+    }
+  }
+}
+
+.results {
+  background: url("./../images/second_bg.png");
+  padding: 70px 20px 80px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  & .title {
+    & > span {
+      font-family: "birchctt", sans-serif;
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+    }
+
+    & > h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      max-width: 284px;
+      margin-top: 10px;
+    }
+  }
+
+  & .list {
+    margin-top: 40px;
+    gap: 40px;
+    display: grid;
+    & li {
+      position: relative;
+      width: 100%;
+      padding: 0 0 0 40px;
+      max-width: 295px;
+
+      & > h5 {
+        font-family: "birchctt", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      & > p {
+        font-family: "Gilroy", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+        & > span {
+          color: #eabc8b;
+          font-family: "Gilroy", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+      }
+
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: url("./../images/list_img.svg");
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.creator {
+  background: url("./../images/expert_bg.png");
+  padding: 80px 20px 70px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  & .title {
+    & > span {
+      font-family: "birchctt", sans-serif;
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+    }
+
+    & > h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      max-width: 284px;
+      margin-top: 10px;
+    }
+  }
+
+  & > img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  & .list {
+    margin-top: 6px;
+    gap: 6px;
+    display: grid;
+    & li {
+      position: relative;
+      width: 100%;
+      padding: 20px 30px 20px 55px;
+      border-radius: 10px;
+      border: 1.5px solid #ffffff;
+      background: linear-gradient(273.3deg, #c99d67 0.38%, #eabc8b 97.93%);
+
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 15px;
+        height: 30px;
+        left: 20px;
+        top: 20px;
+        background: url("./../images/second_logo_chatbotique_opacity.svg");
+        background-size: contain;
+      }
+
+      & > p {
+        font-family: "Gilroy", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        & > span {
+          color: #eabc8b;
+          font-family: "Gilroy", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.bottom_quiz {
+  padding: 0 6px 80px;
+  background: url("./../images/texture_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .form {
+    position: relative;
+    padding: 80px 20px 36px;
+
+    background: #2d3235;
+    border-radius: 10px;
+    width: 99%;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -1px;
+      right: 0;
+      top: -1.8px;
+      bottom: 0;
+      width: 100.4%;
+      height: 100.6%;
+      background: linear-gradient(180deg, #eabc8b 0%, #c99d67 100%);
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+    & > h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      text-align: center;
+      max-width: 300px;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+
+    & > p {
+      margin-top: 20px;
+      font-family: "Gilroy", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 23.4px;
+      letter-spacing: -0.02em;
+      text-align: center;
+
+      & span {
+        font-family: "Gilroy", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.4px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #eabc8b;
+      }
+    }
+
+    & .logoChatBotique {
+      position: relative;
+
+      & .logo_content {
+        margin: 30px auto;
+      }
+
+      & svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.aos-animate {
+        & .triangle-path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: draw 1.5s linear forwards;
+        }
+      }
+    }
+
+    & .action_button {
+      margin-top: 40px;
+      background: #fff;
+      color: #2d3235;
+    }
+  }
+}
+
+.action_button {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 56px;
+  border-radius: 100px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d3235;
+}
+
+.default_button {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: center;
+
+  width: 100%;
+  height: 56px;
+  border-radius: 100px;
+  border: 1.5px solid #ffffff;
+  color: #fff;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticker-tape {
+  position: relative;
+  width: 100vw;
+  height: 48px;
+  z-index: 20;
+  font-size: 18px;
+  line-height: 180%;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1.4px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(91.31deg, #eabc8b 10.38%, #c99d67 82.05%);
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1.8px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(91.31deg, #eabc8b 10.38%, #c99d67 82.05%);
+  }
+
+  & .ticker-tape__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    // Only pause animation on hover when not on mobile / tablet
+    @media (min-width: 1025px) {
+      &:hover {
+        .ticker-tape__row {
+          animation-play-state: paused;
+        }
+      }
+    }
+
+    & .ticker-tape__row,
+    & .ticker-tape__items {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    & .ticker-tape__row {
+      animation: marquee 100s linear infinite;
+    }
+
+    & .ticker-tape__item {
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+      &:first-child {
+        padding-left: 16px;
+      }
+      &:last-child {
+        padding-right: 16px;
+      }
+    }
+
+    & .ticker-tape__content {
+      font-family: BirchCTT;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20.4px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      text-transform: capitalize;
+
+      & > span {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 16.8px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #eabc8b;
+        text-transform: uppercase;
+      }
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@keyframes draw {
+  0% {
+    fill: transparent;
+  }
+
+  80% {
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+}
