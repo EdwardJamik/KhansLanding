@@ -227,16 +227,6 @@ main .top .top_content .description .pre_title {
   padding-left: 12px;
   width: 218px;
 }
-main .top .top_content .description .pre_title::before {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  background: url(/assets/images/chatbotique.png);
-  background-repeat: no-repeat;
-  left: 58px;
-  top: 38%;
-}
 main .top .top_content .description p {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
