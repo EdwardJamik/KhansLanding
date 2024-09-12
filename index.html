@@ -37,12 +37,12 @@
 
         <div class="button">
           <a href="#" class="action_button" data-aos="fade-up" data-aos-duration="500">Отримати консультацію</a>
-          <a href="#" class="default_button">Дізнатись більше</a>
+          <a href="#description" class="default_button">Дізнатись більше</a>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="description">
       <div class="experts">
         <div class="title" data-aos="zoom-in" data-aos-duration="500">
           <span>[ Для кого підійде ]</span>
@@ -275,10 +275,8 @@
         startEvent: 'load'
       })
 
-      // Знаходимо всі елементи з атрибутом data-aos
       var aosElements = document.querySelectorAll('[data-aos]')
 
-      // Перевіряємо, чи елемент у вікні перегляду
       function isInViewport(el) {
         var rect = el.getBoundingClientRect()
         return (
@@ -289,7 +287,6 @@
         )
       }
 
-      // Застосовуємо клас aos-animate до видимих елементів
       aosElements.forEach(function (el) {
         if (isInViewport(el)) {
           el.classList.add('aos-animate')
