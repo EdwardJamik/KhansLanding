@@ -228,6 +228,10 @@ main .top .top_content .description .pre_title {
   padding-left: 12px;
   width: 218px;
 }
+main .top .top_content .description .pre_title > img {
+  margin-left: 8px;
+  margin-top: 8px;
+}
 main .top .top_content .description p {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
