@@ -213,13 +213,12 @@ main .top .top_content .description h1 {
 }
 main .top .top_content .description h1 div {
   position: absolute;
-  bottom: -16px;
+  bottom: -18px;
   left: 52%;
   transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 4%;
 }
 main .top .top_content .description h1 div > span {
   font-size: 42px;
@@ -233,8 +232,7 @@ main .top .top_content .description h1 div > img {
   margin-left: 8px;
   margin-top: 8px;
   width: 164px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: none;
 }
 main .top .top_content .description p {
   font-family: "Gilroy", sans-serif;

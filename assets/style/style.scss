@@ -46,13 +46,13 @@ main {
 
           & div {
             position: absolute;
-            bottom: -16px;
+            bottom: -18px;
             left: 52%;
             transform: translate(-50%, 0);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-left: 4%;
+            // padding-left: 4%;
 
             & > span {
               font-size: 42px;
@@ -71,7 +71,7 @@ main {
               // max-width: 164px;
               // width: 100%;
               width: 164px;
-              object-fit: contain;
+              max-width: none;
             }
           }
         }
