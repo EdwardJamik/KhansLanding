@@ -198,7 +198,6 @@ main .top .top_content {
 }
 main .top .top_content .logo {
   margin: 0 auto;
-  width: 100%;
   max-width: 80px;
 }
 main .top .top_content .description {
@@ -235,7 +234,6 @@ main .top .top_content .description h1 div > img {
   margin-left: 8px;
   margin-top: 8px;
   max-width: 164px;
-  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
