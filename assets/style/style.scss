@@ -43,12 +43,12 @@ main {
           // height: 72px;
           letter-spacing: -0.03em;
           text-align: center;
-          line-height: 68%;
+          // line-height: 68%;
         }
 
         & .pre_title {
           position: relative;
-          top: -14px;
+          top: -24px;
           // display: flex;
           // align-items: center;
           // justify-content: center;
@@ -61,6 +61,10 @@ main {
           margin: 0 auto;
           padding-left: 12px;
           width: 218px;
+
+          @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+            top: -4px;
+          }
 
           &::before {
             content: " ";

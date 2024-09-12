@@ -144,9 +144,7 @@ body {
   scroll-behavior: smooth;
   font-size: 100%;
   line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 ul[class],
@@ -173,6 +171,11 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
 }
 
 main {
@@ -210,11 +213,10 @@ main .top .top_content .description h1 {
   font-weight: 800;
   letter-spacing: -0.03em;
   text-align: center;
-  line-height: 68%;
 }
 main .top .top_content .description .pre_title {
   position: relative;
-  top: -14px;
+  top: -24px;
   font-size: 42px;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -224,6 +226,11 @@ main .top .top_content .description .pre_title {
   margin: 0 auto;
   padding-left: 12px;
   width: 218px;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  main .top .top_content .description .pre_title {
+    top: -4px;
+  }
 }
 main .top .top_content .description .pre_title::before {
   content: " ";

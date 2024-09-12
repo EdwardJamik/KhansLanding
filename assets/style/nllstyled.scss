@@ -162,9 +162,10 @@ body {
   // width: 100%;
   font-size: 100%;
   line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  // -ms-text-size-adjust: 100%;
+  // -moz-text-size-adjust: 100%;
+  // -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 ul[class],
@@ -190,4 +191,9 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
 }
