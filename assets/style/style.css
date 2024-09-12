@@ -203,16 +203,19 @@ main .top .top_content .description {
   margin-top: 60px;
 }
 main .top .top_content .description h1 {
+  position: relative;
   text-transform: uppercase;
   font-family: "Murs Gothic", sans-serif;
   text-shadow: 1px 2px 4px rgba(45, 50, 53, 0.1019607843);
   font-size: 72px;
   font-weight: 800;
-  line-height: 32px;
   letter-spacing: -0.03em;
   text-align: center;
 }
 main .top .top_content .description h1 div {
+  position: absolute;
+  bottom: -16px;
+  left: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,6 +481,13 @@ main .top .top_content .default_button {
 .creator > img {
   width: 100%;
   margin-top: 20px;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
 }
 .creator .list {
   margin-top: 6px;

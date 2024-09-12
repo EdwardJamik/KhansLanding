@@ -31,16 +31,20 @@ main {
         margin-top: 60px;
 
         & h1 {
+          position: relative;
           text-transform: uppercase;
           font-family: "Murs Gothic", sans-serif;
           text-shadow: 1px 2px 4px #2d32351a;
           font-size: 72px;
           font-weight: 800;
-          line-height: 32px;
+          // line-height: 32px;
           letter-spacing: -0.03em;
           text-align: center;
 
           & div {
+            position: absolute;
+            bottom: -16px;
+            left: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -354,6 +358,11 @@ main {
   & > img {
     width: 100%;
     margin-top: 20px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
   }
 
   & .list {
