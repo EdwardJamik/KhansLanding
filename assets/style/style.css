@@ -196,7 +196,7 @@ main .top .top_content {
 }
 main .top .top_content .logo {
   margin: 0 auto;
-  max-width: 80px;
+  width: 80px;
 }
 main .top .top_content .description {
   margin-top: 60px;
@@ -212,6 +212,10 @@ main .top .top_content .description h1 {
   text-align: center;
 }
 main .top .top_content .description h1 div {
+  position: absolute;
+  bottom: -16px;
+  left: 52%;
+  transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,6 +232,7 @@ main .top .top_content .description h1 div > span {
 main .top .top_content .description h1 div > img {
   margin-left: 8px;
   margin-top: 8px;
+  width: 164px;
   -o-object-fit: contain;
      object-fit: contain;
 }
