@@ -211,16 +211,16 @@ main .top .top_content .description h1 {
   letter-spacing: -0.03em;
   text-align: center;
 }
-main .top .top_content .description h1 div {
-  position: absolute;
-  bottom: -18px;
+main .top .top_content .description .pre_title {
+  position: relative;
+  top: -24px;
   left: 52%;
   transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .top .top_content .description h1 div > span {
+main .top .top_content .description .pre_title > span {
   font-size: 42px;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -228,7 +228,7 @@ main .top .top_content .description h1 div > span {
   text-transform: lowercase;
   font-family: "birchctt", sans-serif;
 }
-main .top .top_content .description h1 div > img {
+main .top .top_content .description .pre_title > img {
   margin-left: 8px;
   margin-top: 8px;
   width: 164px;
@@ -242,7 +242,7 @@ main .top .top_content .description p {
   letter-spacing: -0.02em;
   text-align: center;
   max-width: 220px;
-  margin: 30px auto 0;
+  margin: 10px auto 0;
 }
 main .top .top_content .logoChatBotique {
   position: relative;
