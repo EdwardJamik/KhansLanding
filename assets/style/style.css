@@ -210,6 +210,7 @@ main .top .top_content .description h1 {
   font-weight: 800;
   letter-spacing: -0.03em;
   text-align: center;
+  line-height: 68%;
 }
 main .top .top_content .description .pre_title {
   position: relative;
