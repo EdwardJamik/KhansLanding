@@ -68,7 +68,7 @@ main {
             & > img {
               margin-left: 8px;
               margin-top: 8px;
-              max-width: 164px;
+              // max-width: 164px;
               // width: 100%;
               object-fit: contain;
             }
@@ -336,6 +336,7 @@ main {
 }
 
 .creator {
+  overflow-x: hidden;
   background: url("./../images/expert_bg.png");
   padding: 80px 20px 70px;
   background-position: right;
@@ -431,6 +432,7 @@ main {
     background: #2d3235;
     border-radius: 10px;
     width: 99%;
+    margin: 0 auto;
 
     &::before {
       content: " ";

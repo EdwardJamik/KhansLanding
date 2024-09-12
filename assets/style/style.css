@@ -142,8 +142,6 @@ body {
 html,
 body {
   scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
   font-size: 100%;
   line-height: 1;
   -ms-text-size-adjust: 100%;
@@ -230,7 +228,6 @@ main .top .top_content .description h1 div > span {
 main .top .top_content .description h1 div > img {
   margin-left: 8px;
   margin-top: 8px;
-  max-width: 164px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -456,6 +453,7 @@ main .top .top_content .default_button {
 }
 
 .creator {
+  overflow-x: hidden;
   background: url("./../images/expert_bg.png");
   padding: 80px 20px 70px;
   background-position: right;
@@ -544,6 +542,7 @@ main .top .top_content .default_button {
   background: #2d3235;
   border-radius: 10px;
   width: 99%;
+  margin: 0 auto;
 }
 .bottom_quiz .form::before {
   content: " ";
