@@ -231,6 +231,7 @@ main .top .top_content .description .pre_title::before {
   height: 20px;
   background: url(/assets/images/chatbotique.png);
   background-repeat: no-repeat;
+  background-size: contain;
   right: 0;
   top: 38%;
 }
