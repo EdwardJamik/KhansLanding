@@ -211,6 +211,7 @@ main .top .top_content .description h1 {
   font-size: 72px;
   font-weight: 800;
   line-height: 32px;
+  height: 72px;
   letter-spacing: -0.03em;
   text-align: center;
 }
