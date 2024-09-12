@@ -217,6 +217,7 @@ main .top .top_content .description h1 {
 main .top .top_content .description .pre_title {
   position: relative;
   top: -24px;
+  display: flex;
   font-size: 42px;
   font-weight: 400;
   letter-spacing: -0.04em;
