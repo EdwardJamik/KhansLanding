@@ -285,6 +285,10 @@ main .top .top_content .default_button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #eabc8b;
+  height: 34px;
+  display: flex;
+  text-align: left;
+  align-items: center;
 }
 .experts .title > h2 {
   font-size: 36px;
