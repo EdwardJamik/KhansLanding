@@ -275,11 +275,12 @@ main {
 
 .results {
   background: url("./../images/second_bg.png");
-  padding: 70px 20px 80px;
+  padding: 70px 10px 80px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   & .title {
+    padding: 0 10px 0;
     & > span {
       font-family: "birchctt", sans-serif;
 
