@@ -420,7 +420,6 @@ main .top .top_content .default_button {
   position: relative;
   width: 100%;
   padding: 0 0 0 40px;
-  max-width: 295px;
 }
 .results .list li > h5 {
   font-family: "birchctt", sans-serif;
