@@ -313,14 +313,14 @@ main {
       padding: 0 0 0 40px;
       // max-width: 295px;
 
-      & > h5 {
-        font-family: "birchctt", sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: left;
-        text-transform: uppercase;
-      }
+      // & > h5 {
+      //   font-family: "birchctt", sans-serif;
+      //   font-size: 20px;
+      //   font-weight: 400;
+      //   line-height: 26px;
+      //   text-align: left;
+      //   text-transform: uppercase;
+      // }
 
       & > p {
         font-family: "Gilroy", sans-serif;
@@ -331,13 +331,12 @@ main {
         text-align: left;
 
         & > span {
-          color: #eabc8b;
-          font-family: "Gilroy", sans-serif;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 23.4px;
-          letter-spacing: -0.02em;
+          font-family: "birchctt", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
           text-align: left;
+          text-transform: uppercase;
         }
       }
 
@@ -350,6 +349,175 @@ main {
         background: url("./../images/list_img.svg");
         width: 20px;
         height: 20px;
+      }
+    }
+  }
+}
+
+.map {
+  overflow-x: hidden;
+  background: url("./../images/map_bg.png");
+  padding: 80px 0 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  & .title {
+    padding: 0 20px;
+    & > span {
+      font-family: "birchctt", sans-serif;
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+    }
+
+    & > h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      max-width: 284px;
+      margin-top: 10px;
+    }
+  }
+
+  & .content {
+    & h5 {
+      margin-top: 16px;
+      padding: 0 20px;
+
+      & span {
+        &:first-child {
+          //styleName: main text;
+          font-family: Gilroy;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: left;
+
+          opacity: 0.6;
+        }
+
+        &:last-child {
+          //styleName: main text;
+          font-family: Gilroy;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 23.4px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+      }
+    }
+
+    & .steps {
+      margin-top: 60px;
+
+      & .item {
+        &:nth-child(2) {
+          margin-top: 66px;
+        }
+
+        &:nth-child(3) {
+          margin-top: 66px;
+
+          & .road {
+            & span {
+              right: 128px;
+              left: auto !important;
+              bottom: 8;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          margin-top: 66px;
+
+          & .road {
+            & span {
+              right: 40px;
+              left: auto !important;
+              bottom: 8;
+            }
+          }
+        }
+        & .road {
+          position: relative;
+          background-image: url("../images/ways_icon_2.png");
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          height: 24px;
+          width: 100%;
+
+          &.finish {
+            background-image: url("../images/ways_icon_3.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+
+          & span {
+            position: absolute;
+            left: 40px;
+            bottom: 8px;
+            display: block;
+            width: 32px;
+            height: 50px;
+            background-image: url("../images/mark.png");
+            background-position: left;
+            background-repeat: no-repeat;
+
+            &.center {
+              left: 128px;
+              bottom: 8px;
+            }
+          }
+        }
+
+        & .title {
+          //styleName: Subheader;
+          font-family: BirchCTT;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          margin-top: 24px;
+        }
+
+        & ul {
+          margin-top: 16px;
+          padding: 0 20px;
+          & li {
+            //styleName: main text;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23.4px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            padding-left: 30px;
+
+            background-image: url("../images/step_map_icon.svg");
+            background-repeat: no-repeat;
+            background-size: 18px;
+
+            & span {
+              width: 32px;
+              height: 50px;
+            }
+
+            &:not(:first-child) {
+              margin-top: 12px;
+            }
+          }
+        }
       }
     }
   }

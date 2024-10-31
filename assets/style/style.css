@@ -424,14 +424,6 @@ main .top .top_content .default_button {
   width: 100%;
   padding: 0 0 0 40px;
 }
-.results .list li > h5 {
-  font-family: "birchctt", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: left;
-  text-transform: uppercase;
-}
 .results .list li > p {
   font-family: "Gilroy", sans-serif;
   font-size: 17px;
@@ -441,13 +433,12 @@ main .top .top_content .default_button {
   text-align: left;
 }
 .results .list li > p > span {
-  color: #eabc8b;
-  font-family: "Gilroy", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23.4px;
-  letter-spacing: -0.02em;
+  font-family: "birchctt", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
   text-align: left;
+  text-transform: uppercase;
 }
 .results .list li::before {
   content: " ";
@@ -458,6 +449,141 @@ main .top .top_content .default_button {
   background: url("./../images/list_img.svg");
   width: 20px;
   height: 20px;
+}
+
+.map {
+  overflow-x: hidden;
+  background: url("./../images/map_bg.png");
+  padding: 80px 0 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.map .title {
+  padding: 0 20px;
+}
+.map .title > span {
+  font-family: "birchctt", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.map .title > h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  max-width: 284px;
+  margin-top: 10px;
+}
+.map .content h5 {
+  margin-top: 16px;
+  padding: 0 20px;
+}
+.map .content h5 span:first-child {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  opacity: 0.6;
+}
+.map .content h5 span:last-child {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.map .content .steps {
+  margin-top: 60px;
+}
+.map .content .steps .item:nth-child(2) {
+  margin-top: 66px;
+}
+.map .content .steps .item:nth-child(3) {
+  margin-top: 66px;
+}
+.map .content .steps .item:nth-child(3) .road span {
+  right: 128px;
+  left: auto !important;
+  bottom: 8;
+}
+.map .content .steps .item:nth-child(4) {
+  margin-top: 66px;
+}
+.map .content .steps .item:nth-child(4) .road span {
+  right: 40px;
+  left: auto !important;
+  bottom: 8;
+}
+.map .content .steps .item .road {
+  position: relative;
+  background-image: url("../images/ways_icon_2.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24px;
+  width: 100%;
+}
+.map .content .steps .item .road.finish {
+  background-image: url("../images/ways_icon_3.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.map .content .steps .item .road span {
+  position: absolute;
+  left: 40px;
+  bottom: 8px;
+  display: block;
+  width: 32px;
+  height: 50px;
+  background-image: url("../images/mark.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.map .content .steps .item .road span.center {
+  left: 128px;
+  bottom: 8px;
+}
+.map .content .steps .item .title {
+  font-family: BirchCTT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 24px;
+}
+.map .content .steps .item ul {
+  margin-top: 16px;
+  padding: 0 20px;
+}
+.map .content .steps .item ul li {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding-left: 30px;
+  background-image: url("../images/step_map_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+.map .content .steps .item ul li span {
+  width: 32px;
+  height: 50px;
+}
+.map .content .steps .item ul li:not(:first-child) {
+  margin-top: 12px;
 }
 
 .creator {
