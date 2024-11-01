@@ -545,7 +545,7 @@ main .top .top_content .default_button {
   display: block;
   width: 32px;
   height: 50px;
-  background-image: url("../images/mark.png");
+  background-image: url("../images/mark.svg");
   background-position: left;
   background-repeat: no-repeat;
 }
